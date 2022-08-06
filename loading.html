@@ -1,0 +1,37 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .loading {
+        /* z-index: 9999; */
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .loading #icon {
+        border: 8px solid #ddd;
+        border-right-color: #444;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        animation: rotate 1s forwards infinite linear;
+    }
+</style>
+<div class="loading">
+    <span id="icon"></span>
+</div>
