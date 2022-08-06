@@ -44,7 +44,7 @@ content {
 .right {float: right;}
 
 #vertical-line {
-    width: 2px; 
+    width: 1px;
     height: 80%; 
     /* background-color: #fff;  */
     background: linear-gradient(0deg, #fff0, #fffa, #fff0); 
@@ -83,8 +83,9 @@ content {
 .presentation * {
     /* border: 1px solid #f00; */
     color: #fff;
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 4rem;
+    font-weight: 100;
+    letter-spacing: 8px;
     font-style: italic;
     width: 100%;
     filter: drop-shadow(8px 8px 8px #00339820);
