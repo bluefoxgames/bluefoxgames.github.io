@@ -5,7 +5,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 
-    box-shadow: inset 0px 0px 0px 1px #f00; 
+    /* box-shadow: inset 0px 0px 0px 1px #f00;  */
 }
 body {
     overflow-x: hidden;
