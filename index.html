@@ -8,28 +8,34 @@
     <link rel="stylesheet" href="main.css">
     <script src="jquery-3.6.0.min.js"></script>
     <script src="main.js"></script>
+    <link rel="import" href="loading.html">
+    <link rel="icon" href="favicon.png">
 </head>
 <body>
-    <!-- <div class="center">
-        <h1>SparkleFox Games</h1>
-        <p>under maintenance</p>    
-    </div> -->
-    <!-- <div id="loading"></div> -->
-    
     <iframe src="loading.html" frameborder="0" over-page id="loading"></iframe>
-
-    <div class="presentation">
-        <div class="percent-50 left">
-            <img 
-            src="imgs/logotitleB.png" 
-            alt="Logotitle" 
+    <content>
+        <div class="presentation article">
+            <overlay>bg-noise</overlay>
             
-            >
+            <div class="percent-50">
+                <img src="imgs/logotitle.png" alt="Logotitle">
+            </div>
+            <span id="vertical-line"></span>
+            <div class="percent-50">
+                <h2>Shining our <br> creativity.</h2>
+            </div>
         </div>
-        <span id="vertical-line"></span>
-        <div class="percent-50 right">
-            <h2>Shining our <br> creativity.</h2>
+
+        <div class="article one">
+            <div class="percent-50 left">
+                <h2 align="right">Lorem</h2>
+                <h2 align="right">Ipsum</h2>
+            </div>
+            <div class="percent-50 right">
+                <h2>Dolor</h2>
+                <h2>Amet</h2>
+            </div>
         </div>
-    </div>
+    </content>
 </body>
 </html>
