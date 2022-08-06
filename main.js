@@ -6,10 +6,10 @@
 //     }
 // };
 
-window.onload = function() {
-    $('content').show();
-    $('#loading').fadeOut(500);
-};
+// window.onload = function() {
+//     $('content').show();
+//     $('#loading').fadeOut(500);
+// };
 
 // updateContentByWidth(899);
 

@@ -7,11 +7,10 @@
     <title>SparkleFox Games</title>
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="main.css">
-    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery.min.js"></script>
     <script src="main.js" defer></script>
 </head>
 <body>
-    <iframe src="loading.html" frameborder="0" over-page id="loading"></iframe>
     <content>
         <div class="presentation article">
             <overlay>bg-noise</overlay>
@@ -38,5 +37,15 @@
             </div>
         </div>
     </content>
+    <!-- <embed src="loading.html" frameborder="0" over-page id="loading"></embed> -->
+    <div class="loading">
+        <span id="icon"></span>
+    </div>
+    <script defer>
+        $(window).on('load', function(){
+            $('content').show();
+            $('.loading').fadeOut(500);
+        });
+    </script>
 </body>
 </html>

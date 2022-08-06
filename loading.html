@@ -1,10 +1,14 @@
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        cursor: progress !important;
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
     }
     .loading {
+        /* cursor: progress !important; */
         z-index: 9999 !important;
         width: 100vw;
         height: 100vh;
@@ -17,17 +21,9 @@
         background-color: #fff;
         pointer-events: none;
     }
-    @keyframes rotate {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-    }
     .loading #icon {
         border: 8px solid #ddd;
-        border-right-color: #444;
+        border-top-color: #444;
         width: 40px;
         height: 40px;
         border-radius: 50%;
