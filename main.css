@@ -43,6 +43,8 @@ content {
 .left {float: left;}
 .right {float: right;}
 
+/* =============== ARTICLE PRESENTATION =============== */
+
 #vertical-line {
     width: 1px;
     height: 80%; 
@@ -90,6 +92,62 @@ content {
     width: 100%;
     filter: drop-shadow(8px 8px 8px #00339820);
 }
+
+/* =============== SCROLL ANIMATION =============== */
+
+@keyframes scroll {
+    0% {
+        top: 8px;
+        opacity: 0;
+    }
+    20% {
+        top: 8px;
+        opacity: 1;
+    }
+    80% {
+        top: 30px;
+        opacity: 1;
+    }
+    100% {
+        top: 30px;
+        opacity: 0;
+    }
+}
+
+.scroll-anim {
+    width: 100%;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    /* margin-top: -128px; */
+    user-select: none;
+    position: relative;
+    top: -128px;
+    /*background: red;*/
+}
+.scroll-down {
+    border: 4px solid #003398;
+    border-radius: 18px;
+    background: #0000;
+    width: 36px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+}
+.scroll-down span {
+    color: #0000;
+    background: #003398;
+    width: 4px;
+    height: 16px;
+    border-radius: 4px;
+    position: relative;
+    top: 6px;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+}
+
+/* =============== ARTICLE ONE =============== */
 
 .article.one * {
     /* margin: 8px; */
