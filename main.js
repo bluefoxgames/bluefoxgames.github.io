@@ -14,7 +14,7 @@
 // updateContentByWidth(899);
 
 window.addEventListener("scroll",function(){
-    if(scrollY > 200){
+    if(scrollY > 120){
         $('.scroll-anim').fadeOut(500);
     } else {
         $('.scroll-anim').fadeIn(500);
