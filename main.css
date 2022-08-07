@@ -461,7 +461,8 @@ ul.tags li {
 }
 .social a:nth-child(1) i {right: 15px;}
 .social a:nth-child(3) i {right: 13px;}
-.social a:nth-child(4) i {right: 14px;}
+.social a:nth-child(4) {padding: 12px 8px;}
+.social a:nth-child(4) img {position: relative; top: 10px;}
 .social a {
     color: #fff;
     padding: 12px 24px;
@@ -470,6 +471,7 @@ ul.tags li {
     border-radius: 50%;
     transition: background 300ms, border 300ms;
 }
+
 
 .social a:hover {
     border: 1px solid #fff0;
