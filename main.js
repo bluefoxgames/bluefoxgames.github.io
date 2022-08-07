@@ -16,7 +16,12 @@
 window.addEventListener("scroll",function(){
     if(scrollY > 120){
         $('.scroll-anim').fadeOut(500);
+        document.getElementsByClassName('header')[0].style.animation = 'fadeInBottom 500ms forwards'
     } else {
         $('.scroll-anim').fadeIn(500);
+        document.getElementsByClassName('header')[0].style.animation = 'fadeOutUp 500ms forwards'
+        // $('.header').fadeOut(500);
     };
 });
+
+document.getElementsByClassName('header')[0].style.animation = 'fadeOutUp 100ms forwards'
