@@ -138,8 +138,8 @@ content {
     color: #fff;
     letter-spacing: 1px;
     z-index: 99999;
-    position: fixed;
-    bottom: 32px;
+    position: absolute;
+    top: 92vh;
     left: 0;
     font-size: 1em;
     font-weight: 100;
