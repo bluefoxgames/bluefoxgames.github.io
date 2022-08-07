@@ -137,7 +137,7 @@ content {
     background: #000a;
     color: #fff;
     letter-spacing: 1px;
-    z-index: 99999;
+    /* z-index: 99999; */
     position: absolute;
     top: 92vh;
     left: 0;
