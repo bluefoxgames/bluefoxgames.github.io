@@ -492,7 +492,7 @@ ul.tags li {
     .article {
         padding: 0 5vw;
     }
-    .presentation .right h2 {
+    .presentation h2 {
         font-size: 3rem;
         text-align: center;
         filter: drop-shadow(4px 4px 8px #00339840);
