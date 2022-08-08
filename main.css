@@ -335,7 +335,7 @@ content {
 .box {
     margin: 16px;
     padding: 32px;
-    height: 200px;
+    min-height: 200px;
     border-radius: 16px;
     box-shadow: 0 12px 32px #0002;
     /* background-color: #ddd; */
@@ -385,19 +385,15 @@ content {
 }
 .project {
     margin: 16px;
-}
-.project p#role {
-    margin-bottom: 16px;
-    font-weight: 500;
-    font-style: italic;
-    font-size: 1.2rem;
-    color: #999;
+    width: 400px;
 }
 .project-boxes {
     width: 100%;
     display: flex;
-    margin-bottom: 200px;
-    /* flex-direction: row; */
+    /* margin-bottom: 200px; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .project .desc {
     margin: 32px;
@@ -413,6 +409,7 @@ content {
 .project img {
     border-radius: 16px;
     transition: filter 300ms;
+    width: 100%;
 }
 .project:hover img {
     filter: brightness(.3);
@@ -483,4 +480,26 @@ ul.tags li {
 .social a:hover {
     border: 1px solid #fff0;
     background: #fff1;
+}
+
+@media only screen and (max-width: 1080px) {
+    .dev-msg, 
+    .presentation .left, 
+    .presentation #vertical-line, 
+    .about-us .right, 
+    #profile-photo {
+        display: none;
+    }
+    .presentation .right {
+        font-size: 3rem;
+        text-align: center;
+        filter: drop-shadow(4px 4px 8px #00339840);
+    }
+    .project {
+        width: 350px;
+    }
+    .profile-boxes.double {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
