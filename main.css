@@ -476,7 +476,6 @@ ul.tags li {
     transition: background 300ms, border 300ms;
 }
 
-
 .social a:hover {
     border: 1px solid #fff0;
     background: #fff1;
@@ -490,13 +489,20 @@ ul.tags li {
     #profile-photo {
         display: none;
     }
+    .article {
+        padding: 0 5vw;
+    }
     .presentation .right {
         font-size: 3rem;
         text-align: center;
         filter: drop-shadow(4px 4px 8px #00339840);
     }
     .project {
+        margin: 8px 0;
         width: 350px;
+    }
+    .box {
+        margin: 8px 0;
     }
     .profile-boxes.double {
         display: flex;
