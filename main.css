@@ -396,15 +396,22 @@ content {
     justify-content: center;
 }
 .project .desc {
-    margin: 32px;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    margin: 0 32px;
     /* margin-top: -100%; */
-    margin-top: calc(-100% + 16px);
+    /* margin-top: calc(-100% + 16px); */
     color: #fff;
+    /* color: #f00; */
     filter: opacity(0);
     transition: filter 300ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .project .desc * {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 .project img {
     border-radius: 16px;
@@ -435,6 +442,12 @@ ul.tags li {
     background: #0008;
     border: 1px solid #555a;
     border-radius: 24px;
+}
+.container {
+    position: relative;   
+}
+.container div {
+    position: absolute;
 }
 
 /* =============== FOOTER =============== */
