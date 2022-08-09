@@ -30,71 +30,71 @@ window.addEventListener("scroll", function () {
 
 function appearElements() {
     if (screen.width >= 1080) {
-        if (scrollY >= 0 && scrollY <= 60) {
+        if (scrollY >= 0 && scrollY <= 260) {
             // animateElement(animatedElements[0], 'fadeInPop .7s 500ms ease-in-out');
             animateElement(animatedElements[0], 'fadeInRight 1s 500ms');
             animateElement(animatedElements[1], 'fadeInLeft 1s 500ms');
     
-        } else if (scrollY >= 360 && scrollY <= 800){
+        } else if (scrollY >= 260 && scrollY <= 700){
             animateElement(animatedElements[2], 'fadeInRight 1s');
             animateElement(animatedElements[3], 'fadeInLeft 1s');
     
-        } else if (scrollY >= 800 && scrollY <= 1800){
+        } else if (scrollY >= 700 && scrollY <= 1700){
             animateElement(animatedElements[4], 'fadeInUp 1s');
 
-            if (scrollY >= 800 && scrollY <= 1400) {
+            if (scrollY >= 700 && scrollY <= 1700) {
                 animateElement(animatedElements[5], 'fadeInPop .7s ease-in-out');
                 animateElement(animatedElements[6], 'fadeInPop .7s ease-in-out');
 
-            } else if (scrollY >= 1400 && scrollY <= 1800) {
+            } if (scrollY >= 1300 && scrollY <= 1700) {
                 animateElement(animatedElements[7], 'fadeInPop .7s ease-in-out');
 
             };
     
-        } else if (scrollY >= 1800 && scrollY <= 2500){
+        } else if (scrollY >= 1700 && scrollY <= 2500){
             animateElement(animatedElements[8], 'fadeInUp 1s');
             
-            if (scrollY >= 1800 && scrollY <= 2100) {
-                animateElement(animatedElements[9], 'fadeInPop .7s ease-in-out');
+            if (scrollY >= 1700 && scrollY <= 2500) {
+                animateElement(animatedElements[9], 'fadeInUp .7s');
                 
-            } else if (scrollY >= 2100 && scrollY <= 2500) {
-                animateElement(animatedElements[10], 'fadeInPop .7s ease-in-out');
-                animateElement(animatedElements[11], 'fadeInPop .7s ease-in-out');
+            } if (scrollY >= 2000 && scrollY <= 2500) {
+                animateElement(animatedElements[10], 'fadeInRight .7s');
+                animateElement(animatedElements[11], 'fadeInLeft .7s');
 
             };
         }
     } else {
-        if (scrollY >= 0 && scrollY <= 60) {
+        if (scrollY >= 0 && scrollY <= 260) {
             // animateElement(animatedElements[1], 'fadeInPop .8s 500ms ease-in-out');
             animateElement(animatedElements[1], 'fadeInDown 1s 500ms');
     
-        } else if (scrollY >= 360 && scrollY <= 600){
+        } else if (scrollY >= 260 && scrollY <= 500){
             animateElement(animatedElements[2], 'fadeInUp 1s');
     
-        } else if (scrollY >= 600 && scrollY <= 1800){
+        } else if (scrollY >= 500 && scrollY <= 1700){
             animateElement(animatedElements[4], 'fadeInUp 1s');
 
-            if (scrollY >= 600 && scrollY <= 1800) {
+            if (scrollY >= 500 && scrollY <= 1700) {
                 animateElement(animatedElements[5], 'fadeInPop .7s ease-in-out');
                 
-            } if (scrollY >= 1000 && scrollY <= 1800) {
+            } if (scrollY >= 900 && scrollY <= 1700) {
                 animateElement(animatedElements[6], 'fadeInPop .7s ease-in-out');
 
-            } if (scrollY >= 1400 && scrollY <= 1800) {
+            } if (scrollY >= 1300 && scrollY <= 1700) {
                 animateElement(animatedElements[7], 'fadeInPop .7s ease-in-out');
 
             };
     
-        } else if (scrollY >= 1800 && scrollY <= 2600){
+        } else if (scrollY >= 1700 && scrollY <= 2500){
             animateElement(animatedElements[8], 'fadeInUp 1s');
             
-            if (scrollY >= 1800 && scrollY <= 2600) {
+            if (scrollY >= 1700 && scrollY <= 2500) {
                 animateElement(animatedElements[9], 'fadeInPop .7s ease-in-out');
                 
-            } if (scrollY >= 2100 && scrollY <= 2600) {
+            } if (scrollY >= 2000 && scrollY <= 2500) {
                 animateElement(animatedElements[10], 'fadeInPop .7s ease-in-out');
 
-            } if (scrollY >= 2400 && scrollY <= 2600) {
+            } if (scrollY >= 2300 && scrollY <= 2500) {
                 animateElement(animatedElements[11], 'fadeInPop .7s ease-in-out');
 
             };
