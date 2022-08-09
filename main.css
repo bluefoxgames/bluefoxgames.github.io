@@ -11,7 +11,7 @@
         /* display: initial; */
     }
 }
-@keyframes fadeInBottom {
+@keyframes fadeInDown {
     from {
         transform: translateY(-64px);
         opacity: 0;
@@ -39,6 +39,20 @@
     }
     to {
         transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes fadeInPop {
+    from {
+        transform: scale(.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        /* opacity: .5; */
+    }
+    to {
+        transform: scale(1);
         opacity: 1;
     }
 }
@@ -219,7 +233,7 @@ content {
     background-size: cover;
     background-position: 0px 0%;
     animation: background-image-position-y 10s alternate infinite ease-in-out;
-    height: 100vh;
+    height: 90vh;
 }
 .presentation overlay {
     position: absolute;
