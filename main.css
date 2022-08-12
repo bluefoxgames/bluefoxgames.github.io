@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
 @keyframes fadeInUp {
     from {
         transform: translateY(64px);
@@ -72,19 +82,26 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-
+    
+    /* pointer-events: none; */
+    -webkit-user-drag: none;
     /* box-shadow: inset 0px 0px 0px 1px #f005;  */
 }
 body {
     overflow-x: hidden;
 }
+::-webkit-scrollbar {width: 12px;}
+::-webkit-scrollbar-track {background: #fff;}
+::-webkit-scrollbar-thumb {background: #003398;}
+
 ::selection {
     color: #fff;
-    background: #0055fe;
+    background: #003398;
 }
 overlay {font-size: 0 !important; color: #0000 !important;}
-img {
-    pointer-events: none;
+img, 
+.fa-brands {
+    user-select: none;
 }
 
 content {
@@ -234,6 +251,7 @@ content {
     background-position: 0px 0%;
     animation: background-image-position-y 10s alternate infinite ease-in-out;
     height: 90vh;
+    padding: 0 5vw;
 }
 .presentation overlay {
     position: absolute;
@@ -258,6 +276,13 @@ content {
     font-style: italic;
     width: 100%;
     filter: drop-shadow(8px 8px 8px #00339820);
+}
+.presentation .svg {
+    width: 256px;
+    margin: 0 32px;
+}
+.presentation #icon {
+    animation: rotate 2s infinite ease-in-out;
 }
 
 /* .presentation .left {opacity: 0; animation: fadeInRight 1s 500ms forwards;}
@@ -323,10 +348,14 @@ content {
     background-color: #ddd;
 }
 .article.about-us * {
-    /* margin: 8px; */
     width: 100%;
-    margin-bottom: -3.5px;
+    /* margin: 8px; */
+    /* margin-bottom: -3.5px; */
     /* filter: drop-shadow(8px 8px 8px #00339820); */
+}
+.article.about-us .right {
+    display: flex; 
+    align-items: center;
 }
 .article.about-us h3 {
     margin: 16px 0;
@@ -341,6 +370,13 @@ content {
     font-size: 2.5rem;
     font-weight: 200;
     /* text-transform: uppercase; */
+}
+.article.about-us p {
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1.5;
+    font-style: italic;
+    margin-bottom: 64px;
 }
 
 /* .about-us .left {opacity: 0; animation: fadeInRight 1s 500ms forwards;}
@@ -425,6 +461,9 @@ content {
     width: 84px;
     /* margin: 32px; */
 }
+.empty {
+    box-shadow: inset 0px 0px 0px 1px #eee;
+}
 
 /* =============== ARTICLE PROJECTS =============== */
 
@@ -505,6 +544,19 @@ ul.tags li {
     position: absolute;
 }
 
+/* =============== ARTICLE NEWS =============== */
+
+.news {
+    margin: 32px 0;
+    flex-direction: column;
+    /* align-items: center; */
+    /* background-color: #ddd; */
+    /* margin: 16px 10vw; */
+}
+.news * {
+    max-width: 100%;
+}
+
 /* =============== FOOTER =============== */
 
 .footer {
@@ -559,8 +611,10 @@ ul.tags li {
 @media only screen and (max-width: 1080px) {
     .dev-msg, 
     .presentation .left, 
+    .presentation .svg,
     .presentation #vertical-line, 
     .about-us .right, 
+    .empty,
     #profile-photo {
         display: none;
     }
