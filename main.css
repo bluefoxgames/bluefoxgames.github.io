@@ -78,6 +78,10 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -102,6 +106,9 @@ overlay {font-size: 0 !important; color: #0000 !important;}
 img, 
 .fa-brands {
     user-select: none;
+}
+img {
+    pointer-events: none;
 }
 
 content {
@@ -544,6 +551,19 @@ ul.tags li {
 }
 .container div {
     position: absolute;
+}
+.view-list {
+    text-decoration: none;
+    color: #888;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 200;
+    border: 1px solid #888;
+    border-radius: 24px;
+    width: auto;
+    margin: 24px auto;
+    padding: 8px 24px;
 }
 
 /* =============== ARTICLE NEWS =============== */

@@ -1,0 +1,70 @@
+.bg {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.gamepage {
+    background: #0006;
+    color: #fff;
+    font-weight: 200;
+    margin: 0 15vw;
+    padding: 24px;
+    font-size: 1.1rem;
+}
+
+.title img {
+    margin: 64px 0;
+}
+
+.download-box {
+    font-size: 1.2rem;
+    /* border: 1px solid; */
+    padding: 16px 24px;
+    border-radius: 16px;
+    /* background: #fff1; */
+    border: 2px dotted #fff2;
+}
+.download-box h5 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+.download-box p {
+    display: flex;
+    align-items: center;
+}
+.download-box a {
+    color: white;
+    margin-right: 8px;
+}
+.download-box i.fa-brands {
+    font-size: 2em;
+    margin-left: 8px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+h4,
+.H4 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-top: 32px;
+}
+hr {
+    margin: 8px 0;
+    width: 30%;
+}
+.desc img {
+    width: 60%;
+}
+
+.footer {
+    margin-top: 0;
+}
