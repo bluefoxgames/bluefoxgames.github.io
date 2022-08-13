@@ -221,6 +221,7 @@ content {
 .header {
     z-index: 99;
     position: fixed;
+    top: 0;
     background: #fffe;
     box-shadow: 0 0 32px #0002;
     width: 100%;
@@ -484,10 +485,10 @@ content {
 .project-boxes {
     width: 100%;
     display: flex;
-    /* margin-bottom: 200px; */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    /* margin-bottom: 200px; */
 }
 .project .desc {
     position: absolute;
@@ -527,6 +528,7 @@ content {
 }
 ul.tags {
     display: flex;
+    flex-wrap: wrap;
 }
 ul.tags li {
     font-size: .8rem;

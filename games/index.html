@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Virtual micro-company for gaming development">
+    <meta name="keywords" content="Games, Company, Portfolio">
+    <meta name="author" content="Gabriel Borges">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="SparkleFox Games">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../imgs/cover.jpg">
+    <meta property="og:url" content="https://sparklefoxgames.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="SparkleFox Games">
+    <meta name="twitter:description" content="Virtual micro-company for gaming development">
+    <meta name="twitter:image" content="../imgs/cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="Virtual micro-company for gaming development">
+    <meta property="og:site_name" content="SparkleFox Games">
+    <meta name="twitter:image:alt" content="SparkleFox Games Cover">
+
+    <!--  Non-Essential, But Required for Analytics -->
+    <!-- <meta property="fb:app_id" content="your_app_id" />
+    <meta name="twitter:site" content="@website-username"> -->
+
+    <title>Games | SparkleFox Games</title>
+    <link rel="icon" href="../favicon.png">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="games.css">
+    <script src="../jquery.min.js"></script>
+    <script src="../main.js" defer></script>
+    <script src="https://kit.fontawesome.com/bea57d747c.js" crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-191682106-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-191682106-1');
+    </script> -->
+
+</head>
+<body>
+    <content>
+        <div class="header">
+            <img src="../imgs/logotitle.png" alt="">
+        </div>
+
+        <div class="title">
+            <h3>projects</h3>
+            <span id="horizontal-line"></span>
+        </div>
+        <div class="article game-list">
+
+            <ul>
+                <a href="#">
+                    <li class="box" id="alone">
+                        <img src="../imgs/projects/alone.jpg">
+                        <div class="desc">
+                            <h3>ALONE</h3>
+                            <span id="horizontal-line"></span>
+                            <p>You wake up in a room with a small headache. Scared, decide to leave the room and with
+                                the only objective: <b>Find a way out.</b>
+                            </p>
+                            <p id="date">April 13th, 2020</p>
+                        </div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="box" id="nightmare">
+                        <img src="../imgs/projects/nightmare.jpg">
+                        <div class="desc">
+                            <h3>ALONE</h3>
+                            <span id="horizontal-line"></span>
+                            <p>You wake up in a room with a small headache. Scared, decide to leave the room and with
+                                the only objective: <b>Find a way out.</b>
+                            </p>
+                            <p id="date">April 7th, 2018</p>
+                        </div>
+                    </li>
+                </a>
+                <li class="box empty" id=""></li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>© 2022 SparkleFox Games</p>
+            <div class="social">
+                <a href="https://youtube.com/channel/UCrgyUQ7ZofaOXIGGmnI4L8Q" target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com/KesaiARTS" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://kesaiarts01.itch.io" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+                <a href="https://gamejolt.com/@KesaiARTS" target="_blank"><img src="../imgs/gamejolt-icon.png"
+                        width="32px"></a>
+                <a href="https://facebook.com/KesaiArts" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/kesaiarts" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://linkedin.com/company/sparklefoxgames" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+    </content>
+    <!-- PRELOADER -->
+    <div class="loading">
+        <span id="icon"></span>
+    </div>
+    <script defer>
+        $(window).on('load', function () {
+            $('.loading').fadeOut(800);
+            $('content').show();
+            appearElements();
+        });
+    </script>
+</body>
+</html>
