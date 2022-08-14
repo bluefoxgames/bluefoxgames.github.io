@@ -96,11 +96,12 @@ hr {
 }
 
 @media only screen and (max-width: 1080px) {
-    .download-box-empty {
+    .download-box.empty {
         display: none;
     }
     .gamepage {
         margin: 0;
+        padding: 10px;
     }
     .title img {
         width: min(100%, 482px);
