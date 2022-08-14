@@ -18,3 +18,7 @@ window.addEventListener("scroll", function () {
         $('.scroll-anim').fadeIn(500);
     };
 });
+
+if (screen.width < 1080) {
+    document.body.setAttribute('oncontextmenu', 'return false');
+};

@@ -637,6 +637,7 @@ ul.tags li {
     .presentation #vertical-line, 
     .about-us .right, 
     .empty,
+    .projects .desc,
     #profile-photo {
         display: none !important;
     }
@@ -657,6 +658,9 @@ ul.tags li {
     .project {
         margin: 4px 8px;
         /* width: 350px; */
+    }
+    .project:hover img {
+        filter: brightness(1);
     }
     .box {
         margin: 8px 0;
