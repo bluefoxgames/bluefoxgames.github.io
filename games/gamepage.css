@@ -16,13 +16,22 @@
 .title img {
     margin: 64px 0;
 }
-
+.boxes-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 .download-box {
     font-size: 1.2rem;
-    /* border: 1px solid; */
     padding: 16px 24px;
     border-radius: 16px;
-    /* background: #fff1; */
+    border: 2px solid #fff4;
+    width: 44%;
+    display: flex;
+    justify-content: center;
+}
+.download-box-empty {
     border: 2px dotted #fff2;
 }
 .download-box h5 {
@@ -47,8 +56,8 @@
 .desc {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    /* align-items: center; */
+    /* text-align: center; */
 }
 h4,
 .H4 {
