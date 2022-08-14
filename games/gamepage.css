@@ -12,6 +12,7 @@
     font-weight: 200;
     margin: 0 15vw;
     padding: 24px;
+    padding-bottom: 48px;
     font-size: 1.1rem;
 }
 .title {
@@ -102,6 +103,7 @@ hr {
     .gamepage {
         margin: 0;
         padding: 10px;
+        padding-bottom: 48px;
     }
     .title img {
         width: min(100%, 482px);
