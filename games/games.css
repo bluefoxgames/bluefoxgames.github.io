@@ -88,3 +88,16 @@ a {
     position: absolute;
     bottom: 0;
 }
+
+@media only screen and (max-width: 1080px) {
+    .box.empty,
+    .game-list img {
+        display: none;
+    }
+    .game-list li {
+        padding-bottom: 32px;
+    }
+    .game-list #date {
+        bottom: -48px;
+    }
+}
