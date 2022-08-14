@@ -638,7 +638,7 @@ ul.tags li {
     .about-us .right, 
     .empty,
     #profile-photo {
-        display: none;
+        display: none !important;
     }
     .header {
         padding: 12px 0;
@@ -656,7 +656,7 @@ ul.tags li {
     }
     .project {
         margin: 4px 8px;
-        width: 350px;
+        /* width: 350px; */
     }
     .box {
         margin: 8px 0;

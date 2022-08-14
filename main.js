@@ -10,16 +10,11 @@ function appearElements() {
 };
 
 window.addEventListener("scroll", function () {
-    // appearElements();
-
     if (scrollY > 120) {
-        $('.scroll-anim').fadeOut(500);
-        // document.getElementsByClassName('header')[0].style.animation = 'fadeInBottom 500ms forwards'
         animateElement('.header', 'fadeInDown 800ms');
+        $('.scroll-anim').fadeOut(500);
     } else {
-        $('.scroll-anim').fadeIn(500);
-        // document.getElementsByClassName('header')[0].style.animation = 'fadeOutUp 500ms forwards'
         animateElement('.header', 'fadeOutUp 800ms');
-        // $('.header').fadeOut(500);
+        $('.scroll-anim').fadeIn(500);
     };
 });
