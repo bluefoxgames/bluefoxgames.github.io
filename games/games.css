@@ -81,7 +81,7 @@ a {
     margin: 24px;
 }
 .game-list #date {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 200;
     font-style: italic;
     color: #aaa;
@@ -98,6 +98,6 @@ a {
         padding-bottom: 32px;
     }
     .game-list #date {
-        bottom: -48px;
+        bottom: -42px;
     }
 }
