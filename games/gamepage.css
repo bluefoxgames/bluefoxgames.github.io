@@ -40,8 +40,9 @@
     justify-content: center;
     flex-direction: column;
 }
-.download-box-empty {
+.download-box.empty {
     border: 2px dotted #fff2;
+    box-shadow: none;
 }
 .download-box h5 {
     text-transform: uppercase;
