@@ -23,6 +23,10 @@
     width: 482px;
     /* max-width: ; */
 }
+ul.tags li{
+    font-size: 1em;
+    margin: 6px 0;
+}
 .boxes-grid {
     display: flex;
     justify-content: space-between;
@@ -107,6 +111,10 @@ hr {
     }
     .title img {
         width: min(100%, 482px);
+    }
+    ul.tags {
+        display: flex;
+        justify-content: center;
     }
     .download-box {
         width: 100%;
