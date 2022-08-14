@@ -54,11 +54,11 @@
 }
 @keyframes fadeInPop {
     from {
-        transform: scale(.5);
+        transform: scale(.7);
         opacity: 0;
     }
     50% {
-        transform: scale(1.1);
+        transform: scale(1.05);
         /* opacity: .5; */
     }
     to {
