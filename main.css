@@ -637,9 +637,11 @@ ul.tags li {
     .presentation #vertical-line, 
     .about-us .right, 
     .empty,
-    .projects .desc,
     #profile-photo {
         display: none !important;
+    }
+    .projects .desc {
+        display: 0;
     }
     .header {
         padding: 12px 0;
