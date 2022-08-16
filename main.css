@@ -640,8 +640,8 @@ ul.tags li {
     #profile-photo {
         display: none !important;
     }
-    .projects .desc {
-        display: 0;
+    .project:hover .desc {
+        filter: opacity(0);
     }
     .header {
         padding: 12px 0;
