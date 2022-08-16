@@ -89,6 +89,7 @@ html {
     
     /* pointer-events: none; */
     -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
     /* box-shadow: inset 0px 0px 0px 1px #f005;  */
 }
 body {
