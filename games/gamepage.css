@@ -80,6 +80,10 @@ ul.tags li{
     /* align-items: center; */
     /* text-align: center; */
 }
+p b {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
 h4,
 .H4 {
     text-transform: uppercase;
@@ -92,6 +96,21 @@ hr {
     margin-top: -4px;
     width: 30%;
 }
+
+.carrousel {
+    width: 70%;
+    border-radius: 14px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    overflow: overlay;
+}
+.carrousel img {
+    width: 100%;
+}
+
 .desc img {
     width: 60%;
 }
@@ -123,5 +142,8 @@ hr {
         width: 90%;
         margin: auto;
         
+    }
+    .carrousel {
+        width: 100%;
     }
 }

@@ -95,7 +95,7 @@ html {
 body {
     overflow-x: hidden;
 }
-::-webkit-scrollbar {width: 12px;}
+::-webkit-scrollbar {width: 12px; height: 0px;}
 ::-webkit-scrollbar-track {background: #fff;}
 ::-webkit-scrollbar-thumb {background: #003398;}
 
@@ -381,7 +381,7 @@ content {
     /* text-transform: uppercase; */
 }
 .article.about-us p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 200;
     line-height: 1.5;
     font-style: italic;
