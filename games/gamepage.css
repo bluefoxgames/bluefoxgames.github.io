@@ -106,9 +106,11 @@ hr {
     align-content: center;
     align-items: center;
     overflow: overlay;
+    scroll-snap-type: x mandatory;
 }
 .carrousel img {
     width: 100%;
+    scroll-snap-align: start;
 }
 
 .desc img {
