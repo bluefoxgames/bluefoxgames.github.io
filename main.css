@@ -387,6 +387,10 @@ content {
     font-style: italic;
     margin-bottom: 64px;
 }
+.article.about-us div.img-3d-logo-mockup {
+    background-image: url(imgs/3d-logo-mockup.jpg);
+    background-size: cover;
+}
 
 /* .about-us .left {opacity: 0; animation: fadeInRight 1s 500ms forwards;}
 .about-us .right {opacity: 0; animation: fadeInLeft 1s 500ms forwards;} */
